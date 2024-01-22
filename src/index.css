@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +14,27 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.floating-center {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%);
+  border: 2px solid;
+}
+
+
+form {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 0.25em;
+  * {
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+
+  input {
+    border: 1px solid;
+  }
 }
